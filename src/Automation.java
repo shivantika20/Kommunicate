@@ -26,7 +26,7 @@ public class Automation {
         String stepsFailed = "";
         try {
             driver.switchTo().frame("kommunicate-widget-iframe");
-            driver.findElement(By.xpath("/html/body/div[5]/a/div[2]")).click();
+            driver.findElement(By.xpath("//div[@id='launcher-svg-container']")).click();
         } catch (Exception e) {
             stepsFailed += " 1";
         }
